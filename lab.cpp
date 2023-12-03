@@ -1,6 +1,6 @@
 #include <iostream>
 #include <Windows.h>
-#include <cstdlib> // Для використання констант INT_MAX та INT_MIN
+#include <cstdlib> // Для використання функції rand()
 #include <ctime>   // Для генерації випадкових чисел на основі часу
 using namespace std;
 
