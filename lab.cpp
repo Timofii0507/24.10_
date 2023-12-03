@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Windows.h>
-#include <cstdlib> // Для використання констант INT_MAX та INT_MIN
-#include <ctime>   // Для генерації випадкових чисел на основі часу
+#include <cstdlib> // Г„Г«Гї ГўГЁГЄГ®Г°ГЁГ±ГІГ Г­Г­Гї ГґГіГ­ГЄГ¶ВіВї rand()
+#include <ctime>   // Г„Г«Гї ГЈГҐГ­ГҐГ°Г Г¶ВіВї ГўГЁГЇГ Г¤ГЄГ®ГўГЁГµ Г·ГЁГ±ГҐГ« Г­Г  Г®Г±Г­Г®ГўВі Г·Г Г±Гі
 using namespace std;
 
 const int row = 5;
@@ -16,7 +16,7 @@ int main() {
             arr[i][j] = rand() % 10;
         }
     }
-    cout << "Створений масив:" << endl;
+    cout << "Г‘ГІГўГ®Г°ГҐГ­ГЁГ© Г¬Г Г±ГЁГў:" << endl;
     for (size_t i = 0; i < row; ++i) {
         for (size_t j = 0; j < col; ++j) {
             cout << arr[i][j] << " ";
@@ -42,9 +42,9 @@ int main() {
             }
         }
     }
-    cout << "Сума всіх елементів: " << sum << endl;
-    cout << "Середнє арифметичне: " << average << endl;
-    cout << "Мінімальний елемент: " << minElement << endl;
-    cout << "Максимальний елемент:  " << maxElement << endl;
+    cout << "Г‘ГіГ¬Г  ГўГ±ВіГµ ГҐГ«ГҐГ¬ГҐГ­ГІВіГў: " << sum << endl;
+    cout << "Г‘ГҐГ°ГҐГ¤Г­Вє Г Г°ГЁГґГ¬ГҐГІГЁГ·Г­ГҐ: " << average << endl;
+    cout << "ГЊВіГ­ВіГ¬Г Г«ГјГ­ГЁГ© ГҐГ«ГҐГ¬ГҐГ­ГІ: " << minElement << endl;
+    cout << "ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­ГЁГ© ГҐГ«ГҐГ¬ГҐГ­ГІ:  " << maxElement << endl;
     return 0;
 }
